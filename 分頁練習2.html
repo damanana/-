@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+
+        }
+
+        body{
+            margin: 0;
+        }
+
+        .tab-area{
+            width: 80%;
+            padding: 20px;
+            background-color: antiquewhite;
+            margin: auto;
+
+        }
+
+        .tab-btn-group{
+            width: 100%;
+            height: 20%;
+            background-color: plum;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .tab-btn{
+            width: 100px;
+            height: 40px;
+            background-color: pink;
+            text-align:center;
+            line-height: 40px;
+            font-size: 24px;
+            font-weight: 900;
+
+            cursor: pointer;
+            taint
+
+
+        }
+
+        .tab-content-group{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <div class="tab-area">
+        <div class="tab-btn-group">
+            <div id="btn-1" class="tab-btn">花花</div>
+            <div id="btn-2" class="tab-btn">泡泡</div>
+            <div id="btn-3" class="tab-btn">毛毛</div>
+        </div>
+        <div class="tab-content-group">
+            
+            <div id="content-1" class="tab-content">
+                <h2>少女心前線</h2>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, quos ullam nesciunt eligendi quas rem animi exercitationem suscipit ex sapiente velit quia sint amet debitis numquam provident in tempore cum?</span>
+            </div>
+
+            <div id="content-2" class="tab-content">
+                <h2>飛天快樂送</h2>
+                <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus perferendis aspernatur veniam vero laboriosam deserunt cumque architecto consectetur incidunt explicabo et earum autem sequi soluta fugit, labore ipsam. Velit, facilis?</span>
+            </div>
+            <div id="content-3" class="tab-content">
+                <h2>一槍解決不了就開兩槍</h2>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis voluptatem quibusdam fugit veritatis, saepe excepturi dolores velit error tempore. Iusto recusandae quidem unde expedita facere ab debitis culpa earum eaque?</span>
+            </div>
+           
+            
+        </div>
+    </div>
+
+    <script>
+
+        var btn_1= document.querySelector('#btn-1')
+        var btn_2= document.querySelector('#btn-2')
+        var btn_3= document.querySelector('#btn-3')
+
+        var content_1= document.querySelector('#content-1')
+        var content_2= document.querySelector('#content-2')
+        var content_3= document.querySelector('#content-3')
+
+
+        btn_1.onclick = function(){
+            clearALLActive()
+            btn_1.classList.add('active')
+            content_1.classList.add('active')
+        } 
+
+        btn_2.onclick = function(){
+            clearALLActive()
+            btn_2.classList.add('active')
+            content_2.classList.add('active')
+        } 
+
+        btn_3.onclick = function(){
+            clearALLActive()
+            btn_3.classList.add('active')
+            content_3.classList.add('active')
+        } 
+
+
+
+
+
+
+    </script>
+</body>
+</html>
