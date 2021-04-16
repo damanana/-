@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://img.girlstalk.cc/images/media/uploads/2018/05/22/22_rqTSxOr.jpg" alt="" >
+
+    <script>
+        var img = document.querySelector('img') //誰?
+
+        img.onclick = function(){ //甚麼時候
+
+             //因為只有兩張圖，所以單純的判斷現在的src是否等於第一張，如果等於，代表我需要換成第二張
+            if (img.src == 'https://img.girlstalk.cc/images/media/uploads/2018/05/22/22_rqTSxOr.jpg'){
+                //他目前是第一張，所以我要換成第二張
+                img.src ='https://images.theconversation.com/files/27934/original/k7ntgp6q-1374594697.jpg'
+            }else{
+                //他不是第一張，所以他只有可能是第二張(因為程式裡面只有兩張，刪去法得知)。 所以要換回第一張
+                img.src = 'https://img.girlstalk.cc/images/media/uploads/2018/05/22/22_rqTSxOr.jpg'
+            }
+        }
+
+        //第一張圖 'https://img.girlstalk.cc/images/media/uploads/2018/05/22/22_rqTSxOr.jpg'
+        //第二張圖 'https://images.theconversation.com/files/27934/original/k7ntgp6q-1374594697.jpg'
+
+
+    </script>
+</body>
+</html>
