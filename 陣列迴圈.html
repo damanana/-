@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: dimgrey;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box-1" class="box">1</div>
+    <div id="box-2" class="box">2</div>
+    <div id="box-3" class="box">3</div>
+    <div id="box-4" class="box">4</div>
+    
+
+    <script>
+
+    // 陣列 array arr
+    
+    var box = document.querySelectorAll('.box')
+    
+
+    // box[0] .onclick = function(){
+    //     console.log(1);
+    // }
+    // box[1] .onclick = function(){
+    //     console.log(2);
+    // }
+    // box[2] .onclick = function(){
+    //     console.log(3);
+    // }
+    // box[3] .onclick = function(){
+    //     console.log(4);
+    // }
+   
+
+
+    // var box = document.querySelector('#box-1')
+    // console.log(box);
+
+    // var a =[12,25,35,'甲',true]
+    //      0  1  2   3   4
+    // console.log(a);
+
+    // 索引值 index
+    // 從0開始
+    // console.log(a[0]);
+
+    // 迴圈 for迴圈 for loop
+    for (let index = 0; index <10; index++) {
+        // const element = array[index];
+        box[index].onclick=function(){
+            console.log("你現在按到第 "+index+" 個box" );
+        }
+        
+    }
+
+    
+    
+
+
+
+    </script>
+</body>
+</html>

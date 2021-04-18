@@ -25,7 +25,7 @@
 
         .tab-btn-group{
             width: 100%;
-            height: 20%;
+            padding: 20px;
             background-color: plum;
 
             display: flex;
@@ -33,7 +33,7 @@
         }
 
         .tab-btn{
-            width: 100px;
+            width: 160px;
             height: 40px;
             background-color: pink;
             text-align:center;
@@ -42,10 +42,31 @@
             font-weight: 900;
 
             cursor: pointer;
-            taint
-
-
+            transition: 0.3s;
+        
         }
+        .tab-btn.active{
+            background-color: rgb(78, 213, 236);
+             
+        }
+
+        .tab-btn:hover{
+
+            background-color: rgb(211, 82, 104);
+        }
+
+        .tab-content{
+            background-color: rgb(231, 197, 185);
+            padding: 5px 0;
+            display: none;
+        }
+        .tab-content.active{
+            display: block;
+        }
+
+
+
+
 
         .tab-content-group{
             text-align: center;
@@ -58,22 +79,22 @@
     
     <div class="tab-area">
         <div class="tab-btn-group">
-            <div id="btn-1" class="tab-btn">花花</div>
-            <div id="btn-2" class="tab-btn">泡泡</div>
-            <div id="btn-3" class="tab-btn">毛毛</div>
+            <div id="btn-1" class="tab-btn active">花花</div>
+            <div id="btn-2" class="tab-btn active">泡泡</div>
+            <div id="btn-3" class="tab-btn active">毛毛</div>
         </div>
         <div class="tab-content-group">
             
-            <div id="content-1" class="tab-content">
+            <div id="content-1" class="tab-content active">
                 <h2>少女心前線</h2>
                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, quos ullam nesciunt eligendi quas rem animi exercitationem suscipit ex sapiente velit quia sint amet debitis numquam provident in tempore cum?</span>
             </div>
 
-            <div id="content-2" class="tab-content">
+            <div id="content-2" class="tab-content active">
                 <h2>飛天快樂送</h2>
                 <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus perferendis aspernatur veniam vero laboriosam deserunt cumque architecto consectetur incidunt explicabo et earum autem sequi soluta fugit, labore ipsam. Velit, facilis?</span>
             </div>
-            <div id="content-3" class="tab-content">
+            <div id="content-3" class="tab-content active">
                 <h2>一槍解決不了就開兩槍</h2>
                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis voluptatem quibusdam fugit veritatis, saepe excepturi dolores velit error tempore. Iusto recusandae quidem unde expedita facere ab debitis culpa earum eaque?</span>
             </div>
@@ -84,7 +105,7 @@
 
     <script>
 
-        var btn_1= document.querySelector('#btn-1')
+        var btn_1= document.querySelector('#btn-1 ')
         var btn_2= document.querySelector('#btn-2')
         var btn_3= document.querySelector('#btn-3')
 
@@ -92,25 +113,77 @@
         var content_2= document.querySelector('#content-2')
         var content_3= document.querySelector('#content-3')
 
+        // 方法一
+        // btn_1.onclick = function(){
+        //     
+        //     btn_1.classList.add('active')
+        //     content_1.classList.add('active')
 
+        //     btn_2.classList.remove('active')
+        //     content_2.classList.remove('active')
+        //     btn_3.classList.remove('active')
+        //     content_3.classList.remove('active')
+        // } 
+
+        // btn_2.onclick = function(){
+        //     
+        //     btn_2.classList.add('active')
+        //     content_2.classList.add('active')
+
+        //     btn_1.classList.remove('active')
+        //     content_1.classList.remove('active')
+        //     btn_3.classList.remove('active')
+        //     content_3.classList.remove('active')
+        // } 
+
+        // btn_3.onclick = function(){
+        //     
+        //     btn_3.classList.add('active')
+        //     content_3.classList.add('active')
+
+        //     btn_1.classList.remove('active')
+        //     content_1.classList.remove('active')
+        //     btn_2.classList.remove('active')
+        //     content_2.classList.remove('active')
+        // } 
+
+        // 方法二
+        // 匿名函式
         btn_1.onclick = function(){
             clearALLActive()
             btn_1.classList.add('active')
             content_1.classList.add('active')
+
+            
         } 
 
         btn_2.onclick = function(){
             clearALLActive()
             btn_2.classList.add('active')
             content_2.classList.add('active')
+
+           
+          
         } 
 
         btn_3.onclick = function(){
             clearALLActive()
             btn_3.classList.add('active')
             content_3.classList.add('active')
+
+            
         } 
 
+        // 函式
+        function clearALLActive(){
+            btn_1.classList.remove('active')
+            content_1.classList.remove('active')
+            btn_2.classList.remove('active')
+            content_2.classList.remove('active')
+            btn_3.classList.remove('active')
+            content_3.classList.remove('active')
+
+        }
 
 
 
