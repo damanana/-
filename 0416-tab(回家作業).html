@@ -68,50 +68,50 @@
 <body>
     <div class="tab-area">
         <div class="tab-btn-group">
-            <div id="btn-1" class="tab-btn">按鈕1</div>
-            <div id="btn-2" class="tab-btn">按鈕2</div>
-            <div id="btn-3" class="tab-btn">按鈕3</div>
-            <div id="btn-4" class="tab-btn">按鈕4</div>
-            <div id="btn-5" class="tab-btn">按鈕5</div>
-            <div id="btn-6" class="tab-btn">按鈕6</div>
+            <div id="btn-1" class="tab-btn ">按鈕1</div>
+            <div id="btn-2" class="tab-btn ">按鈕2</div>
+            <div id="btn-3" class="tab-btn ">按鈕3</div>
+            <div id="btn-4" class="tab-btn ">按鈕4</div>
+            <div id="btn-5" class="tab-btn ">按鈕5</div>
+            <div id="btn-6" class="tab-btn ">按鈕6</div>
         </div>
         <div class="tab-content-group">
-            <div id="content-1" class="tab-content">
+            <div id="content-1" class="tab-content ">
                 <h1>內容1</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates aspernatur sunt tempora impedit
                     unde veniam nostrum nisi. Doloribus, tenetur magni atque numquam enim quam illum corporis fugiat
                     aliquid, maiores obcaecati.</p>
             </div>
 
-            <div id="content-2" class="tab-content">
+            <div id="content-2" class="tab-content ">
                 <h1>內容2</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates aspernatur sunt tempora impedit
                     unde veniam nostrum nisi. Doloribus, tenetur magni atque numquam enim quam illum corporis fugiat
                     aliquid, maiores obcaecati.</p>
             </div>
 
-            <div id="content-3" class="tab-content">
+            <div id="content-3" class="tab-content ">
                 <h1>內容3</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates aspernatur sunt tempora impedit
                     unde veniam nostrum nisi. Doloribus, tenetur magni atque numquam enim quam illum corporis fugiat
                     aliquid, maiores obcaecati.</p>
             </div>
 
-            <div id="content-4" class="tab-content">
+            <div id="content-4" class="tab-content ">
                 <h1>內容4</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates aspernatur sunt tempora impedit
                     unde veniam nostrum nisi. Doloribus, tenetur magni atque numquam enim quam illum corporis fugiat
                     aliquid, maiores obcaecati.</p>
             </div>
 
-            <div id="content-5" class="tab-content">
+            <div id="content-5" class="tab-content ">
                 <h1>內容5</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates aspernatur sunt tempora impedit
                     unde veniam nostrum nisi. Doloribus, tenetur magni atque numquam enim quam illum corporis fugiat
                     aliquid, maiores obcaecati.</p>
             </div>
 
-            <div id="content-6" class="tab-content">
+            <div id="content-6" class="tab-content ">
                 <h1>內容6</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates aspernatur sunt tempora impedit
                     unde veniam nostrum nisi. Doloribus, tenetur magni atque numquam enim quam illum corporis fugiat
@@ -121,15 +121,96 @@
     </div>
 
     <script>
+        // var btn_1= document.querySelector('#btn-1')
+        // var btn_2= document.querySelector('#btn-2')
+        // var btn_3= document.querySelector('#btn-3')
+        // var btn_4= document.querySelector('#btn-4')
+        // var btn_5= document.querySelector('#btn-5')
+        // var btn_6= document.querySelector('#btn-6')
+
+        // var content_1 = document.querySelector('#content-1')
+        // var content_2 = document.querySelector('#content-2')
+        // var content_3 = document.querySelector('#content-3')
+        // var content_4 = document.querySelector('#content-4')
+        // var content_5 = document.querySelector('#content-5')
+        // var content_6 = document.querySelector('#content-6')
+
+        // btns_1.onclick = function(){
+        //     clearAllActive()
+        //     btns_1.classList.add('active')
+        //     contents_1.classList.add('active')
+        // }
+
+        // btns_2.onclick = function(){
+        //     clearAllActive()
+        //     btns_2.classList.add('active')
+        //     contents_2.classList.add('active')
+        // }
+
+        // btns_3.onclick = function(){
+        //     clearAllActive()
+        //     btns_3.classList.add('active')
+        //     contents_3.classList.add('active')
+        // }
+
+        // btns_4.onclick = function(){
+        //     clearAllActive()
+        //     btns_4.classList.add('active')
+        //     contents_4.classList.add('active')
+        // }
+
+        // btns_5.onclick = function(){
+        //     clearAllActive()
+        //     btns_5.classList.add('active')
+        //     contents_5.classList.add('active')
+        // }
+
+        // btns_6.onclick = function(){
+        //     clearAllActive()
+        //     btns_6.classList.add('active')
+        //     contents_6.classList.add('active')
+        // }
+
+        // function clearAllActive(){
+        //     btn_1.classList.remove('active')
+        //     content_1.classList.remove('active')
+        //     btn_2.classList.remove('active')
+        //     content_2.classList.remove('active')
+        //     btn_3.classList.remove('active')
+        //     content_3.classList.remove('active')
+        //     btn_4.classList.remove('active')
+        //     content_4.classList.remove('active')
+        //     btn_5.classList.remove('active')
+        //     content_5.classList.remove('active')
+        //     btn_6.classList.remove('active')
+        //     content_6.classList.remove('active')
+            
+            
+
+        // }
+            
         var btns = document.querySelectorAll('.tab-btn')
         var contents = document.querySelectorAll('.tab-content')
-        
+        console.log(btns);
+        console.log(contents);
 
-        for (let index = 0; index < btns.length; index++) {
-            btns[index].onclick = function(){
+        for (let index = 0; index <btns.length; index++) {
+            btns[index].onclick = function (){
+                clearAllActive()
                 btns[index].classList.add('active')
+                contents[index].classList.add('active')
+
             }
+
         }
+        function clearAllActive(){
+            for (let index = 0; index < btns.length; index++) {
+                btns[index].classList.remove('active')
+                contents[index].classList.remove('active')  
+            }    
+        }
+
+       
         
     </script>
 </body>
