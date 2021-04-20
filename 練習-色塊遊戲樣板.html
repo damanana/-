@@ -54,16 +54,12 @@
 
 <body>
     <div class="canvas">
-         <div class="game-panel">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div></div>  
+         <div class="game-panel"></div>  
     </div>
 
     <script>
         var GamePanel = document.querySelector('.game-panel')
-        var level = 1
+        var level = 3
         
         newGame()
 
@@ -74,26 +70,26 @@
             // 產生方塊
             // 調整方塊數量大小
             // 產生一個隨機顏色，賦予方塊
-            for (let index = 0; index < 9; index++)
+            for (let index = 0; index < level*level; index++)
             {
-                GamePanel.innerHTML += `<div class="box"style="width:calc(100%/3);height:calc(100%/3);background-color:rgb(${color})"></div>`
+                GamePanel.innerHTML += `<div class="box"style="width:calc(100%/${level});height:calc(100%/${level});background-color:rgb(${color})"></div>`
             }
 
             // 隨機產生答案方塊
             var boxes = document.querySelectorAll(".box")
-            boxes[Math.floor(Math.random()*10)].classList.add('ans')
-            console.log(boxes);
+            boxes[Math.floor(Math.random()*boxes.length)].classList.add('ans')
+            console.log('.box');
 
             // 答案方塊透明度調整
             var ans = document.querySelector('.ans')
-            ans.style.opacity=0.5
+            ans.style.opacity=0.5 + level = 0.05
 
 
             // 幫答案方塊加上onclick事件
             ans.onclick = function(){
-                alert("答對了")
+                alert("下一關、答對了")
                 GamePanel.innerHTML=``
-                newGame()
+                newGame("")
             } 
 
             // 當玩家按到這個方塊(答案)的時候，開啟下一關
