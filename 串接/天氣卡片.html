@@ -294,9 +294,8 @@
 
 
     <script>
-        var card_group = document.querySelector(".card-group")
+        var card_group = document.querySelector(".card_group")
         var datw = new Date()
-
 
 
         fetch('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D')
@@ -310,13 +309,30 @@
                 console.log(location);
 
                 location.forEach(city=> {
-                    let city_name = location.locationName  // 縣市名稱
+                    let city_name = city.locationName  // 縣市名稱
                     let wx = city.weatherElement[0].time[0].parameter.parameterName  // 天氣現象 
                     let PoP = city.weatherElement[1].time[0].parameter.parameterName // 降雨機率
                     let minT = city.weatherElement[2].time[0].parameter.parameterName
                     let CI = city.weatherElement[3].time[0].parameter.parameterName //舒適度
                     let maxT = city.weatherElement[4].time[0].parameter.parameterName
                     
+                    console.log(city_name);
+
+                    let weather_img
+
+                    if(wx == "晴天"){
+
+                        weather_img = `background-image:url("./4.21img/晴天-removebg-preview.png");`                            
+                    }
+                    if(wx == "晴時多雲"){
+                        weather_img = `background-image:url("./4.21img/晴時多雲-removebg-preview.png");`
+                    }
+
+                    if(wx == "多雲"){
+                        weather_img = `background-image:url("./4.21img/多雲-removebg-preview.png");`
+                    }
+
+
                     card_group.innerHTML +=`
                         <div class="card">
                             <div class="container">
@@ -327,7 +343,7 @@
                                             <span>${city_name}</span>
                                         </div>
                                         <div class="b3-1-2">
-                                            <div class="pic"></div>
+                                            <div class="pic" style="background-image:url(${weather_img});"></div>
                                         </div>
                     
                     
@@ -352,12 +368,10 @@
                         </div>
                     
                     `
-                    // innerHTML+``
                 });
                 console.log();
             });
         
-        console.log(city_name,wx)
 
 
 
