@@ -15,9 +15,32 @@
             margin: 80px 0;
         }
         .container{
-          width: 1024px;
+          width: 1536px;
 
         }
+
+        #card1 ,#card2,#card3{
+          width: 40px;
+          height: 40px;
+          margin: auto;
+          position: relative;
+          top: 20px;
+          /* color: blueviolet; */
+         
+                    
+        }
+
+        .card_circle{
+          width: 80px;
+          height: 80px;
+          margin: auto;
+          background-color: rgb(225, 231, 255);
+          border-radius: 50%;
+          color: blueviolet;
+
+        }
+
+        
 
 
     </style>
@@ -25,44 +48,44 @@
 <body>
     <!-- 以下navbar 開頭 -->
     <nav>
-        <div class="container">
-              <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#"> 
+          <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                      <a class="navbar-brand" href="#"> 
                         <img src="/方塊bookstrap切版/方塊img/logo.svg" width="106" height="60" alt="">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                         <ul class="navbar-nav d-flex ">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Blog <span class="sr-only"></span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"> <img src="./方塊img/shopping.svg" width="30" height="30" alt=""></a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <img src="./方塊img/user.svg" width="30" height="30" alt="">
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Login</a>
-                                    
-                                    
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-              </nav>
+                      </a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                              <ul class="navbar-nav d-flex ">
+                                <li class="nav-item active">
+                                  <a class="nav-link" href="#">Blog <span class="sr-only"></span></a>
+                                </li>
+                               <li class="nav-item">
+                                  <a class="nav-link" href="#">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Contact</a>
+                                </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#"> <img src="./方塊img/shopping.svg" width="30" height="30" alt=""></a>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <img src="./方塊img/user.svg" width="30" height="30" alt="">
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                      <a class="dropdown-item" href="#">Login</a>
+                                      
+                                      
+                                    </div>
+                                  </li>
+                              </ul>
+                      </div>
+                  </nav>
         </div>
     </nav>
     <!-- 以上navbar 結尾 -->
@@ -99,53 +122,69 @@
    
     <main>
         <div class="container px-5 py-24 mx-auto">
-            <div class="text">  <!-- 字 1-->
+            <div class="text-center">  <!-- 字 1-->
                 <h3>Raw Denim Heirloom Man Braid</h3>
                 <p>Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.
                 </p>
                 
             </div> 
 
+            <br>
+
             <!--3張圖 開始-->
-            <div class="card-deck"> 
-                <div class="card" style="width: 18rem;">
-                    <img src="">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 " viewBox="0 0 24 24">
-                          <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                        </svg>
-                    
-                          
+              <div class="card-deck "> 
+                  <div class="card border-0" style="width: 18rem;">
+                      <div class="card_circle">
+                        <div id="card1">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 " viewBox="0 0 24 24">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                          </svg>
+                        </div>
+                      </div>
+                        
                       
-                    <div class="card-body">
+                      <div class="card-body text-center">
                         <h5 class="card-title">Shooting Stars</h5>
                         <p class="card-text">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.<br>Learn More</p>
                         
+                      </div>
                     </div>
-                </div>
             
-                <div class="card" style="width: 18rem;">
-                    <img src="./方塊img/cut-solid.svg" class="card-img-top w-10 h-10 " viewBox="0 0 24 24" alt="...">
-                    <div class="card-body">
+                  <div class="card border-0" style="width: 18rem;">
+                    <div class="card_circle">
+                      <div id="card2">
+                        <img  class="" src="./方塊img/cut-solid.svg" >
+                      </div>
+                    </div>
+                    
+                    
+                    <div class="card-body text-center">
                         <h5 class="card-title">The Catalyzer
                         </h5>
                         <p class="card-text">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.
                         <br>Learn More</p>
                         
                     </div>
-                </div>
+                  </div>
 
-                <div class="card" style="width: 18rem;">
-                    <img src="./方塊img/user.svg" class="card-img-top" alt="...">
-                    <div class="card-body w-10 h-10 " viewBox="0 0 24 24">
-                        <h5 class="card-title">Neptune</h5>
-                        <p class="card-text">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.
-                        <br>Learn More</p>
-                       
+                  <div class="card border-0" style="width: 18rem;">
+                    <div class="card_circle">
+                      <div id="card3">
+                        <img src="./方塊img/user.svg" class="card-img-top" alt="...">
+                        <div class="card-body w-10 h-10 " viewBox="0 0 24 24"></div>
+                      </div>
                     </div>
-                </div>
+                    
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Neptune</h5>
+                      <p class="card-text">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.
+                      <br>Learn More</p>
+                    </div>   
+                    
+                  </div>
 
                 
-            </div>
+              </div>
             <!-- 3張圖 結尾 -->
 
             <div> <!--按鈕-->
